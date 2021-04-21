@@ -1,26 +1,29 @@
-/* ==UserStyle==
+*/ ==UserStyle==
 @name           Hotsno Discord Web Theme
 @namespace      Hotsno's Styles
 @author         hotsno
 @description    A Discord theme made 100% by me.
 @version        1.0.7
 @license        NO-REDISTRIBUTION
-@preprocessor   uso
+@preprocessor   hotsno
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://discord.com/") {
+@-moz-document url-prefix("https://discord.com, https://ptb.discord.com, https://canary.discord.com") {
+/* Borrowed code (check below for credit) */
+/* Credit to https://github.com/puckzxz/NotAnotherAnimeTheme*/
 @import url(https://hotsno.github.io/hotsno-discord-theme/css/scsl.css);
 
 /* Import any custom fonts here */
 /* If you find an image I would STRONGLY recommend rehosting the image on imgur https://imgur.com/upload */
 :root {
     /*
-    Change the theme background
     Spaceman: https://i.imgur.com/K9AJmNI.png
     osu background 1: https://i.imgur.com/qqJPiCH.jpg
     osu background 2: https://i.imgur.com/4FHhFAl.jpg
     Vaporwave: https://i.imgur.com/bckU0YB.jpg
     Black blobs: https://i.imgur.com/S0g5h3b.jpg
+    Kogecha 1: https://i.imgur.com/mMJn3eD.jpg
+    Fully black 1080p: https://i.imgur.com/14JPeTm.jpg
     */
     --background-image: url(https://i.imgur.com/bckU0YB.jpg);
 
@@ -265,4 +268,183 @@
 .toolbar-1t6TWx a {
     display: none;
 }
+}
+
+@-moz-document url-prefix("https://discord.com, https://ptb.discord.com, https://canary.discord.com") {
+/* Personal CSS */
+/* Comment/uncomment and change to your liking */
+/* Hover member list */
+:root {
+    --hover-animation-speed: 0.35s;
+    --seperator-color: var(--background-accent);
+}
+.membersWrap-2h-GB4 {
+    min-width: unset;
+    width: 65px;
+    justify-content: right;
+}
+.members-1998pB {
+    transition: transform var(--hover-animation-speed);
+}
+.membersWrap-2h-GB4:hover .members-1998pB {
+    transform: translateX(-190px);
+}
+.membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    border-radius: 50px;
+    background: unset;
+    background-color: var(--seperator-color);
+    position: absolute;
+    left: -36px;
+    top: 29px;
+    margin-left: 0px;
+}
+.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+    background-color: unset;
+    margin-left: 0px;
+    transition: margin-left var(--hover-animation-speed);
+}
+.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+    margin-left: 8px;
+}
+.membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
+    transform: translateX(-6px);
+}
+.membersWrap-2h-GB4 .membersGroup-v9BXpm {
+    cursor: default;
+    transform: translateX(45px);
+    transition: transform var(--hover-animation-speed);
+    overflow: visible;
+}
+.members-1998pB {
+    border-radius: 15px 15px 0 0 !important;
+}
+.membersWrap-2h-GB4,
+.members-1998pB {
+    left: 15px;
+    margin-right: 10px;
+}
+.chat-3bRxxu {
+    background: var(--background-tertiary);
+}
+.chatContent-a9vAAp {
+    border-radius: 0 15px 0 0 !important;
+    left: 25px;
+    margin-left: -25px;
+}
+.theme-dark .members-1998pB {
+    background-color: rgba(23, 23, 23, 0.9);
+}
+
+/* Small search bar */
+.searchBar-3dMhjb {
+    width: 28px;
+    transition: width 0.1s ease-in-out;
+}
+
+/* Pill unread bar */
+.newMessagesBar-265mhP {
+    width: 500px;
+    top: 1.6rem;
+    left: auto;
+    right: 12px;
+    border-radius: 0.7rem 0 0 0.7rem;
+    float: right;
+}
+.newMessagesBar-265mhP.barBase-1c2Rfb .barButtonAlt-mYL1lj.barButtonBase-2uLO1z {
+    width: auto;
+}
+.newMessagesBar-265mhP {
+    background: rgba(147, 112, 219, 0.35);
+}
+
+/* Hover bottom buttons */
+.buttons-3JBrkn {
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+.channelTextArea-rNsIhG:hover .buttons-3JBrkn {
+    opacity: 1;
+}
+.attachWrapper-2TRKBi {
+    order: 1;
+    margin-left: 9px;
+}
+.attachButton-2WznTc {
+    padding-right: 0px;
+}
+.uploadModal-2ifh8j .buttons-3JBrkn {
+    opacity: 1;
+}
+
+/* Ctrl-K/T fix */
+.scroller-zPkAnE {
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.theme-dark .quickswitcher-3JagVE {
+    background-color: rgba(22, 22, 22, 0.9);
+}
+.backdrop-1wrmKB {
+    opacity: 0.4 !important;
+}
+.theme-dark .input-2VB9rf {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Hide top buttons */
+.clickable-3rdHwn[aria-label="Inbox"] {
+    display: none;
+}
+.clickable-3rdHwn[aria-label="Member List"] {
+    display: none;
+}
+.clickable-3rdHwn[aria-label="Toggle Channels"] {
+    display: none;
+}
+.clickable-3rdHwn[aria-label="Toggle Servers"] {
+    display: none;
+}
+.toolbar-1t6TWx a {
+    display: none;
+}
+
+/* Custom server name (change to the server's guild ID in both places, then change the "content" attribute */
+/* [data-guild-id="000000000000000000"] > .name-1jkAdW {
+    visibility: hidden;
+    position: relative;
+}
+[data-guild-id="000000000000000000"] > .name-1jkAdW:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Custom Name Here";
+} */
+/* Hover top buttons
+.toolbar-1t6TWx {
+    opacity: 0;
+    transition: opacity 50ms ease;
+  }
+  .toolbar-1t6TWx:hover {
+    opacity: 1;
+  }
+*/
+/* Hide servers sidebar */
+/* .guilds-1SWlCJ {
+  width: 0px;
+} */
+
+/* Hide left sidebar (channels, profile button area, etc) */
+/* .sidebar-2K8pFh {
+  width: 0px;
+} */
+/* Remove banners */
+/* .animatedContainer-1NSq4T {
+    display: none;
+}
+.scroller-RmtA4e .content-3YMskv > div[style="height: 84px;"] {
+    display: none;
+} */
 }
