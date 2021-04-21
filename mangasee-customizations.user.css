@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name           MangaSee Customizations
+@namespace      Hotsno's Styles
+@author         hotsno
+@description    Customizations for MangaSee
+@version        1.0.2
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document url-prefix("https://mangasee123.com/") {
+/* Custom scrollbar */
+
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1a1a1a;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+}
+}
+
+@-moz-document url-prefix("https://mangasee123.com/") {
+/* Other */
+
+/* Recolor background */
+body,
+html {
+    background-color: #000000 !important;
+}
+/* Bottom of page thingy*/
+.DesktopNav {
+    background: #000;
+}
+}
