@@ -1,9 +1,13 @@
-/* ==UserScript==
-@name Hotsno Discord Web Theme
-@author hotsno
-@description A Discord theme made 100% by me.
-@version 1.0.7
-==UserScript== */
+/* ==UserStyle==
+@name           Hotsno Discord Web Theme
+@namespace      Hotsno's Styles
+@author         hotsno
+@description    A Discord theme made 100% by me.
+@version        1.0.7
+@license        NO-REDISTRIBUTION
+@preprocessor   hotsno
+
+==/UserStyle== */
 
 @-moz-document url-prefix("https://discord.com, https://ptb.discord.com, https://canary.discord.com") {
 /* Borrowed code (check below for credit) */
