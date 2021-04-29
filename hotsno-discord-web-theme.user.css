@@ -34,13 +34,13 @@ url-prefix("https://canary.discord.com") {
     Umbrella:           https://i.imgur.com/SkbTtbv.jpg
     
     */
-        --background-image: url(https://i.imgur.com/z3o4Vcy.png);
+        --background-image: url(https://i.imgur.com/bckU0YB.jpg);
 
         /*
     Change your friends icon image
-    Default:            https://i.imgur.com/63g6Em8.jpg
     Purple dab:         https://i.imgur.com/xYpufjb.png
     Green dab:          https://i.imgur.com/QGB6qsI.png
+    Purple default:     https://i.imgur.com/W8b8JA0.png
     */
         --friends-icon: url(https://i.imgur.com/W8b8JA0.png);
         --friends-icon-position: center center;
