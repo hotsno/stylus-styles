@@ -8,3 +8,4 @@
 - [Hotsno Discord Web Theme](https://github.com/hotsno/stylus-styles/raw/main/hotsno-discord-web-theme.user.css)
 - [MangaSee Customizations](https://github.com/hotsno/stylus-styles/raw/main/mangasee-customizations.user.css)
 - [Stylus Extension Theme](https://raw.githubusercontent.com/33kk/uso-archive/flomaster/data/usercss/146675.user.css)
+- [Crunchyroll Beta Customizations](https://raw.githubusercontent.com/hotsno/stylus-styles/main/crunchyroll-customizations.user.css)
