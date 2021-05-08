@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           Crunchyroll Customizations
+@namespace      Hotsno's styles
+@author         hotsno
+@description    Crunchyroll customizations.
+@version        1.0.0
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+
+@-moz-document url-prefix("https://beta.crunchyroll.com/") {
+/* Custom scrollbar */
+
+/* Width */
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f47521;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6600;
+}
+}
