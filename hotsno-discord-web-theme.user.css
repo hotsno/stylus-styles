@@ -41,8 +41,9 @@ url-prefix("https://canary.discord.com") {
     Purple dab:         https://i.imgur.com/xYpufjb.png
     Green dab:          https://i.imgur.com/QGB6qsI.png
     Purple default:     https://i.imgur.com/W8b8JA0.png
+    Blurple new:        https://i.imgur.com/rIdMIXR.png   
     */
-        --friends-icon: url(https://i.imgur.com/W8b8JA0.png);
+        --friends-icon: url(https://i.imgur.com/rIdMIXR.png);
         --friends-icon-position: center center;
         --friends-icon-zoom: 100%;
 
