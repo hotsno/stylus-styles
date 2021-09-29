@@ -119,5 +119,19 @@ And then uncomment the following:
 .folder-1hbNCn {
     background-color: rgba(0,0,0,0)
 }
+  
+/* Hide right side buttons */
+.tutorialContainer-30WoTp,
+.guilds-1SWlCJ .scroller-1Bvpku > :nth-last-child(2) {
+    display: none;
+}
+.tutorialContainer-30WoTp,
+.guilds-1SWlCJ .scroller-1Bvpku > :nth-last-child(3) {
+    display: none;
+}
+.tutorialContainer-30WoTp,
+.guilds-1SWlCJ .scroller-1Bvpku > :nth-last-child(4) {
+    display: none;
+}
 
 }
